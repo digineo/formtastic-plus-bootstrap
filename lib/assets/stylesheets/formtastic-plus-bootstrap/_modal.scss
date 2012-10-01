@@ -1,0 +1,11 @@
+
+// forms in modal-windows need further attention
+.modal .formtastic {
+  
+  @include formtastic-responsive();
+  
+  fieldset.inputs, fieldset.actions {
+    margin: 0;
+  }
+  
+}

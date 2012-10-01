@@ -148,3 +148,54 @@
     @include label-common($abbr-top-offset: -2px);
   }
 }
+
+@mixin formtastic-responsive() {
+  
+  // force labels into single rows
+  label {
+    float: none !important;
+    text-align: left !important;
+
+    // set abbr closer to label text
+    abbr {
+      position: relative !important;
+      right: 0px !important;
+    }
+  }
+
+  // legends should also be in single rows
+  legend {
+    float: none !important;
+    display: block !important;
+  }
+
+  // inline-errors and -hints should be lefties
+  p.inline-errors, p.inline-hints {
+    margin-left: 0px !important;
+  }
+
+  // the height of textareas should be limited
+  textarea {
+    height: 200px !important;
+  }
+
+  // push booleans to the left
+  input[type="checkbox"] {
+    margin-left: 0px !important;
+  }
+
+  // groups of choices and fragments go left too
+  ol.choices-group, ol.fragments-group {
+    margin-left: 0px !important;
+  }
+
+  // and finally the actions have to go left
+  .actions ol {
+    margin-left: 0px !important;
+  }
+  
+  fieldset.inputs ol > li.input .input-xxlarge {
+    width: 100% !important;
+  }
+
+}

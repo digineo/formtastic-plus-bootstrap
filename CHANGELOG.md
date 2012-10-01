@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.x
+
+* Support for modal windows.
+
 ## 1.1
 
 * Support for responsive forms.

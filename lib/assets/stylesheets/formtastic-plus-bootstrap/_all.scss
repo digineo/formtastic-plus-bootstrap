@@ -19,3 +19,5 @@ $inputWidth: (5 * $gridColumnWidth) !default;
   @import "inputs";
   @import "disabled";
 }
+
+@import "modal";
